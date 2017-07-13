@@ -11,6 +11,7 @@
 
 namespace Sylius\Component\Promotion\Checker;
 
+use Sylius\Bundle\PromotionBundle\Form\Type\Rule\ItemTotalConfigurationType;
 use Sylius\Component\Promotion\Model\PromotionSubjectInterface;
 
 /**
@@ -37,6 +38,6 @@ class ItemTotalRuleChecker implements RuleCheckerInterface
      */
     public function getConfigurationFormType()
     {
-        return 'sylius_promotion_rule_item_total_configuration';
+        return ItemTotalConfigurationType::class;
     }
 }

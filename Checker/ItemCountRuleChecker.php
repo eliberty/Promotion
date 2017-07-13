@@ -11,6 +11,7 @@
 
 namespace Sylius\Component\Promotion\Checker;
 
+use Sylius\Bundle\PromotionBundle\Form\Type\Rule\ItemCountConfigurationType;
 use Sylius\Component\Promotion\Model\PromotionSubjectInterface;
 use Sylius\Component\Promotion\Model\PromotionCountableSubjectInterface;
 
@@ -42,6 +43,6 @@ class ItemCountRuleChecker implements RuleCheckerInterface
      */
     public function getConfigurationFormType()
     {
-        return 'sylius_promotion_rule_item_count_configuration';
+        return ItemCountConfigurationType::class;
     }
 }
